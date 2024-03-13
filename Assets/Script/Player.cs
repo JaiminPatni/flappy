@@ -53,11 +53,11 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Obstacle")
         {
-            FindObjectsOfType<GameManager>().GameOver();
+            FindObjectOfType<GameManager>().GameOver();
         }
         else if (other.gameObject.tag == "Scoring")
         {
-            FindObjectOfType<GameManager>().IncreaseScore();
+            FindObjectOfType<GameManager>().IncreseScore();
         }
     }
 }

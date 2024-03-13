@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Game over");
     }
-    private void IncreaseScore()
+    public void IncreseScore()
     {
         score++;
     }
